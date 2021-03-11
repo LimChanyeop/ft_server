@@ -1,6 +1,5 @@
 #!/bin/bash
 
-chmod 777 /run/sh
 chown -R www-data:www-data /var/www/
 chmod -R 755 /var/www/
 
@@ -20,7 +19,7 @@ mv wordpress/ var/www/html/
 
 chown -R www-data:www-data /var/www/html/wordpress
 
-cp -rp ./tmp/wp-config.php /var/www/html/wordpress
+cp -rp ./tmp/wp-config.php /var/www/html/wordpress/
 
 service mysql start
 
